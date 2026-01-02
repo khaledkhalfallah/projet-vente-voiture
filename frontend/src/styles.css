@@ -1,0 +1,62 @@
+/* Nav principale */
+nav {
+  padding: 10px 20px;
+  background-color: #1e90ff; /* bleu */
+  color: white;
+  display: flex;
+  gap: 15px;
+  border-radius: 0 0 10px 10px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Cartes de voitures */
+.card {
+  border: 1px solid #1e90ff;
+  border-radius: 12px;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+/* Boutons Acheter */
+button.buy {
+  padding: 8px 15px;
+  margin: 5px;
+  background-color: #1e90ff;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.2s;
+}
+
+button.buy:hover {
+  background-color: #1c86ee;
+}
+
+/* Boutons Supprimer */
+button.delete {
+  padding: 8px 15px;
+  margin: 5px;
+  background-color: #ff4d4f;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.2s;
+}
+
+button.delete:hover {
+  background-color: #ff7875;
+}
