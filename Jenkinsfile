@@ -3,15 +3,22 @@ pipeline {
 
   stages {
 
+    stage('Clone Repository') {
+      steps {
+        git branch: 'main',
+            url: 'https://github.com/khaledkhalfallah/projet-vente-voiture.git'
+      }
+    }
+
     stage('Build Backend Image') {
       steps {
-        sh 'docker build -t khaled/mern-backend ./backend'
+        sh 'docker build -t khaled/mern-backend backend'
       }
     }
 
     stage('Build Frontend Image') {
       steps {
-        sh 'docker build -t khaled/mern-frontend ./frontend'
+        sh 'docker build -t khaled/mern-frontend frontend'
       }
     }
 
